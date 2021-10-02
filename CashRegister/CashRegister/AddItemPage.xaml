@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CashRegister.AddItemPage">
+    <ContentPage.Content>
+        <TableView>
+            <TableRoot>
+                <TableSection Title="Add New Product">
+                    <EntryCell x:Name="nameEntry" Label="Product Name" Placeholder="Enter Product Name"/>
+                    <EntryCell x:Name="priceEntry" Label="Price" Placeholder="Enter Product Price" Keyboard="Numeric"/>
+                    <EntryCell x:Name="qtyEntry" Label="Quantity" Placeholder="Enter Product Quantity" Keyboard="Numeric"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Order="Primary" Priority="0" Clicked="Save_Clicked"/>
+        <ToolbarItem Text="Cancel" Order="Primary" Priority="1" Clicked="Cancel_Clicked"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

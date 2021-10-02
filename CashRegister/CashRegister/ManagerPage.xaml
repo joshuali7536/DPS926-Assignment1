@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CashRegister.ManagerPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Button Text="History" HorizontalOptions="CenterAndExpand" Clicked="History_Clicked"/>
+            <Button Text="Restock" HorizontalOptions="CenterAndExpand" Clicked="Restock_Clicked"/>
+            <Button Text="Add New Item" HorizontalOptions="CenterAndExpand" Clicked="Add_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
